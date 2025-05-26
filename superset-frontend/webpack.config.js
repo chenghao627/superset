@@ -534,12 +534,13 @@ let proxyConfig = getProxyConfig();
 if (isDevMode) {
   config.devtool = 'eval-cheap-module-source-map';
   config.devServer = {
-    onBeforeSetupMiddleware(devServer) {
+    setupMiddlewares(middlewares, devServer) {
       // load proxy config when manifest updates
       const { afterEmit } = getCompilerHooks(devServer.compiler);
       afterEmit.tap('ManifestPlugin', manifest => {
         proxyConfig = getProxyConfig(manifest);
       });
+      return middlewares;
     },
     historyApiFallback: true,
     hot: true,

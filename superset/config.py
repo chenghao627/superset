@@ -108,7 +108,7 @@ PACKAGE_JSON_FILE = str(files("superset") / "static/assets/package.json")
 #     "type": "image/png"
 #     "rel": "icon"
 # },
-FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
+FAVICONS = [{"href": "/static/assets/images/CM-logo.png"}]
 
 
 def _try_json_readversion(filepath: str) -> str | None:
@@ -307,10 +307,10 @@ AUTH_RATE_LIMIT = "5 per second"
 # GLOBALS FOR APP Builder
 # ------------------------------
 # Uncomment to setup Your App name
-APP_NAME = "Superset"
+APP_NAME = "中移金融科技"
 
 # Specify the App icon
-APP_ICON = "/static/assets/images/superset-logo-horiz.png"
+APP_ICON = "/static/assets/images/CMFT-logo.jpg"
 
 # Specify where clicking the logo would take the user'
 # Default value of None will take you to '/superset/welcome'
