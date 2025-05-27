@@ -181,19 +181,19 @@ msgstr "数据库中不存在 %(object)s 。"
 
 #, fuzzy, python-format
 msgid "%(other)s charts will appear here"
-msgstr " %(other)s 图表将出现在此处"
+msgstr " %(other)s 图表将展示在此处"
 
 #, fuzzy, python-format
 msgid "%(other)s dashboards will appear here"
-msgstr " %(other)s 看板将出现在此处"
+msgstr " %(other)s 看板将展示在此处"
 
 #, fuzzy, python-format
 msgid "%(other)s recents will appear here"
-msgstr " %(other)s 最近访问的将出现在此处"
+msgstr " %(other)s 最近访问的将展示在此处"
 
 #, fuzzy, python-format
 msgid "%(other)s saved queries will appear here"
-msgstr "%(other)s 保存的请求将出现在此处"
+msgstr "%(other)s 保存的请求将展示在此处"
 
 #, python-format
 msgid "%(prefix)s %(title)s"
@@ -7115,7 +7115,7 @@ msgstr "没有图表"
 
 #, fuzzy
 msgid "No charts yet"
-msgstr "还没有图表"
+msgstr "尚无图表"
 
 #, fuzzy
 msgid "No columns found"
@@ -7138,7 +7138,7 @@ msgstr "找不到兼容的模式"
 
 #, fuzzy
 msgid "No dashboards yet"
-msgstr "还没有看板"
+msgstr "尚无看板"
 
 msgid "No data"
 msgstr "没有数据"
@@ -7228,7 +7228,7 @@ msgstr "没有已保存的指标"
 
 #, fuzzy
 msgid "No saved queries yet"
-msgstr "还没保存查询"
+msgstr "尚无已保存的查询"
 
 msgid "No stored results found, you need to re-run your query"
 msgstr "找不到存储的结果，需要重新运行查询"
@@ -11681,7 +11681,7 @@ msgstr "该表已经有了数据集"
 msgid ""
 "This table already has a dataset associated with it. You can only "
 "associate one dataset with a table.\n"
-msgstr "此表已经关联了一个数据集。一个表只能关联一个数据集。"
+msgstr "此表已经关联了一个数据集。一个表只能关联一个数据集。\n"
 
 msgid "This value should be greater than the left target value"
 msgstr "这个值应该大于左边的目标值"
