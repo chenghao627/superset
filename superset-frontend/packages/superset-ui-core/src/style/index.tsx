@@ -124,6 +124,7 @@ const defaultTheme = {
       dark2: '#315E7E',
       light1: '#B3DEFE',
       light2: '#EFF8FE',
+      light3: '#338EE3',
     },
   },
   opacity: {
