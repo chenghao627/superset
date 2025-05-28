@@ -14380,3 +14380,6 @@ msgstr "年"
 
 msgid "zoom area"
 msgstr "缩放面积"
+
+msgid "DASHBOARD ID"
+msgstr "看板ID"

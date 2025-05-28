@@ -3603,6 +3603,9 @@
       "This is the condition that will be added to the WHERE clause. For example, to only return rows for a particular client, you might define a regular filter with the clause `client_id = 9`. To display no rows unless a user belongs to a RLS filter role, a base filter can be created with the clause `1 = 0` (always false).": [
         "这是将会添加到WHERE子句的条件。例如，要仅返回特定客户端的行，可以使用子句 `client_id = 9` 定义常规过滤。若要在用户不属于RLS过滤角色的情况下不显示行，可以使用子句 `1 = 0`（始终为false）创建基本过滤。"
       ],
+      "Regular filters add where clauses to queries if a user belongs to a role referenced in the filter, base filters apply filters to all queries except the roles defined in the filter, and can be used to define what users can see if no RLS filters within a filter group apply to them.": [
+        "如果用户属于过滤器中引用的角色，常规过滤器会向查询添加WHERE子句；基础过滤器则对所有查询应用过滤条件，除了过滤器中定义的角色之外。如果在过滤器组内没有适用于用户的行级安全（RLS）过滤器，基础过滤器可以用来定义用户能够看到的内容。"
+      ],
       "This json object describes the positioning of the widgets in the dashboard. It is dynamically generated when adjusting the widgets size and positions by using drag & drop in the dashboard view": [
         "这个JSON对象描述了部件在看板中的位置。它是动态生成的，可以通过拖放，在看板中调整整部件的大小和位置"
       ],
@@ -3735,6 +3738,10 @@
       "Truncate Y Axis. Can be overridden by specifying a min or max bound.": [
         "截断Y轴。可以通过指定最小或最大界限来重写。"
       ],
+      "Add Rule": ["新增规则"],
+      "Rule Name": ["规则名称"],
+      "The name of the rule must be unique": ["名称必须是唯一的"],
+      "These are the datasets this filter will be applied to.": ["这些是将应用此过滤的表。"],
       "Truncate long cells to the \"min width\" set above": [""],
       "Truncates the specified date to the accuracy specified by the date unit.": [
         "将指定的日期截取为指定的日期单位精度。"
@@ -4472,7 +4479,8 @@
       "y: values are normalized within each row": [""],
       "year": ["年"],
       "zoom area": ["缩放面积"],
-      "other dashboards will appear here": ["其他看板将显示在此处"]
+      "other dashboards will appear here": ["其他看板将显示在此处"],
+      "DASHBOARD ID": ["看板ID"]
     }
   }
 }
