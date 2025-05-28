@@ -930,6 +930,7 @@ msgid ""
 "displayed in the filter."
 msgstr "为控制筛选器的源查询添加筛选条件，但这只限于自动完成的上下文，即这些条件不会影响筛选器在仪表板上的应用方式。当你希望通过只扫描底层数据的一个子集来提高查询性能，或者限制筛选器中显示的可用值范围时，这一点特别有用。"
 
+
 msgid "Add filters and dividers"
 msgstr "添加过滤器和分隔符"
 
@@ -1076,6 +1077,9 @@ msgstr "合计平均值"
 msgid "Aggregate Sum"
 msgstr "合计"
 
+msgid "and"
+msgstr "和"
+
 msgid ""
 "Aggregate function applied to the list of points in each cluster to "
 "produce the cluster label."
@@ -1197,22 +1201,25 @@ msgid "Allow CREATE TABLE AS"
 msgstr "允许 CREATE TABLE AS"
 
 msgid "Allow CREATE TABLE AS option in SQL Lab"
-msgstr "在 SQL 编辑器中允许 CREATE TABLE AS 选项"
+msgstr "在SQL编辑器中允许 CREATE TABLE AS 选项"
 
 msgid "Allow CREATE VIEW AS"
 msgstr "允许 CREATE VIEW AS"
 
 msgid "Allow CREATE VIEW AS option in SQL Lab"
-msgstr "在 SQL 编辑器中允许 CREATE VIEW AS 选项"
+msgstr "在SQL编辑器中允许 CREATE VIEW AS 选项"
 
 msgid "Allow Csv Upload"
 msgstr "允许Csv上传"
 
 msgid "Allow DML"
-msgstr "允许 DML"
+msgstr "允许DML"
+
+msgid "Allow DDL and DML"
+msgstr "允许DDL和DML"
 
 msgid "Allow changing catalogs"
-msgstr ""
+msgstr "允许更改目录"
 
 msgid ""
 "Allow column names to be changed to case insensitive format, if supported"
@@ -3014,7 +3021,7 @@ msgid "Connect"
 msgstr "连接"
 
 msgid "Connect Google Sheet"
-msgstr ""
+msgstr "连接Google Sheet"
 
 msgid "Connect Google Sheets as tables to this database"
 msgstr "将Google Sheet作为表格连接到此数据库"
@@ -5626,7 +5633,7 @@ msgstr "直方图"
 
 #, fuzzy
 msgid "Histogram (legacy)"
-msgstr "热力图（传统）"
+msgstr "直方图（传统）"
 
 msgid "Home"
 msgstr "主页"
@@ -7115,7 +7122,7 @@ msgstr "没有图表"
 
 #, fuzzy
 msgid "No charts yet"
-msgstr "尚无图表"
+msgstr "还没有图表"
 
 #, fuzzy
 msgid "No columns found"
@@ -7138,7 +7145,7 @@ msgstr "找不到兼容的模式"
 
 #, fuzzy
 msgid "No dashboards yet"
-msgstr "尚无看板"
+msgstr "还没有看板"
 
 msgid "No data"
 msgstr "没有数据"
@@ -7200,7 +7207,7 @@ msgid "No results found"
 msgstr "未找到结果"
 
 msgid "No results match your filter criteria"
-msgstr ""
+msgstr "没有匹配您的过滤条件的结果"
 
 msgid "No results were returned for this query"
 msgstr "此查询没有数据返回"
@@ -7228,7 +7235,7 @@ msgstr "没有已保存的指标"
 
 #, fuzzy
 msgid "No saved queries yet"
-msgstr "尚无已保存的查询"
+msgstr "还没有已保存的查询"
 
 msgid "No stored results found, you need to re-run your query"
 msgstr "找不到存储的结果，需要重新运行查询"
@@ -7867,6 +7874,9 @@ msgstr "选择一个指标来显示"
 msgid "Pick a name to help you identify this database."
 msgstr "选择一个名称来帮助您识别这个数据库。"
 
+msgid "connecting to MySQL."
+msgstr "如何连接MySQL"
+
 #, fuzzy
 msgid "Pick a nickname for how the database will display in Superset."
 msgstr "为这个数据库选择一个昵称以在Superset中显示"
@@ -8500,13 +8510,13 @@ msgid "Rename tab"
 msgstr "重命名选项卡"
 
 msgid "Render HTML"
-msgstr ""
+msgstr "渲染HTML"
 
 msgid "Render columns in HTML format"
-msgstr ""
+msgstr "以HTML格式渲染列"
 
 msgid "Render data in HTML format if applicable."
-msgstr ""
+msgstr "若适用，以HTML格式渲染数据。"
 
 msgid "Rendering"
 msgstr "渲染"
@@ -8798,6 +8808,12 @@ msgstr "读取的行"
 msgid "Rule"
 msgstr "规则"
 
+msgid "RULE"
+msgstr "规则"
+
+msgid "rule"
+msgstr "规则"
+
 #, fuzzy
 msgid "Rule Name"
 msgstr "规则名称"
@@ -8969,18 +8985,18 @@ msgid "Samples for datasource could not be retrieved."
 msgstr "无法预览此数据源"
 
 msgid "Sankey"
-msgstr "蛇形图"
+msgstr "桑基"
 
 #, fuzzy
 msgid "Sankey Chart"
-msgstr "图表保存"
+msgstr "桑基图表"
 
 #, fuzzy
 msgid "Sankey Diagram (legacy)"
-msgstr "桑基图"
+msgstr "桑基图（传统）"
 
 msgid "Sankey Diagram with Loops"
-msgstr "桑基图"
+msgstr "循环桑基图"
 
 #, fuzzy
 msgid "Satellite"
@@ -11876,14 +11892,14 @@ msgstr "时间字符串不明确。请指定为 [%(human_readable)s 前] 还是 
 
 #, fuzzy
 msgid "Time-series Area Chart (legacy)"
-msgstr "面积图（传统）"
+msgstr "时间序列-面积图（传统）"
 
 #, fuzzy
 msgid "Time-series Bar Chart (legacy)"
 msgstr "时间序列-条形图（传统）"
 
 msgid "Time-series Line Chart (legacy)"
-msgstr "折线图（传统）"
+msgstr "时间序列-折线图（传统）"
 
 msgid "Time-series Percent Change"
 msgstr "时间序列-百分比变化"
@@ -12051,7 +12067,7 @@ msgid "Try applying different filters or ensuring your datasource has data"
 msgstr "尝试应用不同的筛选器或确保您的数据源包含数据。“"
 
 msgid "Try different criteria to display results."
-msgstr ""
+msgstr "尝试不同的条件来显示结果。"
 
 msgid "Tuesday"
 msgstr "星期二"
@@ -12291,7 +12307,7 @@ msgstr "上传列式文件"
 
 #, fuzzy
 msgid "Upload Columnar file to database"
-msgstr "上传列式文件到数据库"
+msgstr "上传列式文件"
 
 msgid "Upload Credentials"
 msgstr "上传凭据"
@@ -12319,15 +12335,15 @@ msgid "Upload a file with a valid extension. Valid: [%s]"
 msgstr ""
 
 msgid "Upload file to database"
-msgstr "上传文件到数据库"
+msgstr "上传文件"
 
 #, fuzzy
 msgid "Upload file to preview columns"
-msgstr "上传文件到数据库"
+msgstr "上传文件以预览列"
 
 #, fuzzy
 msgid "Uploading a file is required"
-msgstr "需要名称"
+msgstr "需要上传文件"
 
 #, fuzzy
 msgid "Upper Threshold"
@@ -13680,7 +13696,7 @@ msgstr "列"
 
 #, python-format
 msgid "connecting to %(dbModelName)s"
-msgstr ""
+msgstr "如何连接 %(dbModelName)s"
 
 #, fuzzy
 msgid "content type"

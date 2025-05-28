@@ -246,7 +246,7 @@ function RowLevelSecurityList(props: RLSProps) {
     buttonAction: () => handleRuleEdit(null),
     buttonText: canEdit ? (
       <>
-        <i className="fa fa-plus" data-test="add-rule-empty" /> {'Rule'}{' '}
+        <i className="fa fa-plus" data-test="add-rule-empty" /> {t('Rule')}{' '}
       </>
     ) : null,
   };

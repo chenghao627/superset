@@ -109,6 +109,12 @@ export default function EmptyState({
           );
         }
         if (tab === TableTab.Other) {
+          // console.log({
+          //   tableName,
+          //   tab,
+          //   otherTabTitle,
+          //   translatedMessage: t('%(other)s dashboards will appear here', {other:'测试'}),
+          // });
           const other = otherTabTitle || t('Other');
           return welcomeTableWillAppear[tableName](other);
         }
@@ -145,10 +151,12 @@ export default function EmptyState({
                   <i className="fa fa-plus" />
                   {tableName === WelcomeTable.SavedQueries
                     ? t('SQL query')
-                    : tableName
-                        .split('')
-                        .slice(0, tableName.length - 1)
-                        .join('')}
+                    : t(
+                        tableName
+                          .split('')
+                          .slice(0, tableName.length - 1)
+                          .join(''),
+                      )}
                 </Button>
               </Link>
             </ButtonContainer>
